@@ -1,7 +1,23 @@
-function sumOfDifferences(arr) {
-  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+// Examples
+// makeNegative(1);    // return -1
+// makeNegative(-5);   // return -5
+// makeNegative(0);    // return 0
+// makeNegative(0.12); // return -0.12
+// Notes
+// The number can be negative already, in which case no change is required.
+// Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+function makeNegative(num) {
+  if(num >= 0) { 
+    return num - num * 2    
+  }
+  else {
+    return num
+  }
 }
-//function takes in array
-//if array has more than 1 element: return instructions.
-//instructions: max minus min number. First round return answer. Then repeat until no more number left.
-//all returns will be added up.
+//takes in number
+//if number is more or equal to 0: return negative
+//negative: number minus (number times two)
+//else return de number that is already negative
