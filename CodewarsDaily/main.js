@@ -1,8 +1,17 @@
-// Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+// Description:
+// Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is always a string, no need to verify it.
 
-// [Make sure you type the exact thing I wrote or the program may not execute properly]
-function greet(name){
-    return `Hello, ${name} how are you doing today?`
-  }
-  //takes in name. 
-  //with backticks we use template literal to denote in JS.
+// Examples
+// "Hi!"     ---> "Hi"
+// "Hi!!!"   ---> "Hi!!"
+// "!Hi"     ---> "!Hi"
+// "!Hi!"    ---> "!Hi"
+// "Hi! Hi!" ---> "Hi! Hi"
+// "Hi"      ---> "Hi"
+
+const remove = s => s.replace(/!$/, '');
+
+//create function type with variable.
+//takes parameter s.
+//use replace method on s if s has last input of "!" .
+//replace "!" with empty "" string.
