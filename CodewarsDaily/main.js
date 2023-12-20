@@ -1,21 +1,10 @@
-// Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World! if name is not given (or passed as an empty String).
+// Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
 
-// Assuming that name is a String and it checks for user typos to return a name with a first capital letter (Xxxx).
+// Examples (Input -> Output)
+// 15  -> '101.25 Chinese Yuan'
+// 465 -> '3138.75 Chinese Yuan'
+// The conversion rate you should use is 6.75 CNY for every 1 USD. All numbers should be represented as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
 
-// Examples:
-
-// * With `name` = "john"  => return "Hello, John!"
-// * With `name` = "aliCE" => return "Hello, Alice!"
-// * With `name` not given 
-//   or `name` = ""        => return "Hello, World!"
-
-const hello = s => `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`
-
-//magic!
-//s is parameter
-//if statement in arrow function.
-//if s is not empty, then make first letter of s uppercase.
-//then take s and erase the first letter.
-//Make this result all lowercase.
-//than return uppercase first letter and lowercase rest of letters together.
-//else: s is empty and just return Hello World.
+function usdcny(usd) {
+  return usd * 6.75 + 0.00 + " Chinese Yuan";
+}
