@@ -1,10 +1,13 @@
-// Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
+// The wide-mouth frog is particularly interested in the eating habits of other creatures.
 
-// Examples (Input -> Output)
-// 15  -> '101.25 Chinese Yuan'
-// 465 -> '3138.75 Chinese Yuan'
-// The conversion rate you should use is 6.75 CNY for every 1 USD. All numbers should be represented as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
+// He just can't stop asking the creatures he encounters what they like to eat. But, then he meets the alligator who just LOVES to eat wide-mouthed frogs!
 
-function usdcny(usd) {
-  return usd * 6.75 + 0.00 + " Chinese Yuan";
+// When he meets the alligator, it then makes a tiny mouth.
+
+// Your goal in this kata is to create complete the mouth_size method this method takes one argument animal which corresponds to the animal encountered by the frog. If this one is an alligator (case-insensitive) return small otherwise return wide.
+
+// STRINGSLOGICFUNDAMENTALS
+function mouthSize(animal) {
+    return animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
 }
+
