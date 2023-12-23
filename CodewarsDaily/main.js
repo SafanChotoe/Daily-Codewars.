@@ -1,13 +1,21 @@
-// The wide-mouth frog is particularly interested in the eating habits of other creatures.
+// You get any card as an argument. Your task is to return the suit of this card (in lowercase).
 
-// He just can't stop asking the creatures he encounters what they like to eat. But, then he meets the alligator who just LOVES to eat wide-mouthed frogs!
+// Our deck (is preloaded):
 
-// When he meets the alligator, it then makes a tiny mouth.
+// ('3♣') -> return 'clubs'
+// ('3♦') -> return 'diamonds'
+// ('3♥') -> return 'hearts'
+// ('3♠') -> return 'spades'
 
-// Your goal in this kata is to create complete the mouth_size method this method takes one argument animal which corresponds to the animal encountered by the frog. If this one is an alligator (case-insensitive) return small otherwise return wide.
 
-// STRINGSLOGICFUNDAMENTALS
-function mouthSize(animal) {
-    return animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
-}
+function defineSuit(card) {
+  if(card.includes('♥')) return 'hearts'
+  if(card.includes('♦')) return 'diamonds'
+  if(card.includes('♣')) return 'clubs'
+  if(card.includes('♠')) return 'spades' 
+  }
 
+//function takes in any card.
+//then checks if input contains any suits at any position.
+//because deck is preloaded, we don't have to worry about how the card will be put in the parameter.
+//checks which suit and return string equivalent
